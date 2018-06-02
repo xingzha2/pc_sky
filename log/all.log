@@ -1,0 +1,838 @@
+2018-06-02 09:27:40,536 [Dummy-1:7144] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 09:27:57,345 [Thread-2:7800] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 124556
+2018-06-02 09:27:57,676 [Thread-3:11280] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^$' [name='index']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2018-06-02 09:27:57,712 [Thread-3:11280] [django.server:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2094
+2018-06-02 09:30:04,974 [Thread-4:9560] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 124691
+2018-06-02 09:30:45,710 [Thread-8:19164] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 86
+2018-06-02 09:31:27,058 [Thread-11:17720] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 126095
+2018-06-02 09:31:42,675 [Thread-14:10288] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 137425
+2018-06-02 09:31:45,144 [Thread-15:11304] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 137424
+2018-06-02 09:34:01,142 [Thread-16:5412] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLPattern '^$' [name='index']>]], 'path': 'index'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2018-06-02 09:34:01,156 [Thread-16:5412] [django.server:124] [basehttp:log_message] [WARNING]- "GET /index HTTP/1.1" 404 2076
+2018-06-02 09:34:28,093 [Thread-17:16312] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 125960
+2018-06-02 09:51:14,332 [Dummy-1:11032] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 09:51:17,427 [Thread-2:13152] [django.server:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 94401
+2018-06-02 09:52:01,261 [Dummy-1:17116] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 09:52:01,401 [Thread-2:12800] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06442270>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06442030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x064568D0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204FF0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:01,512 [Thread-2:12800] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 87
+2018-06-02 09:52:28,770 [Thread-5:15212] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x064788A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x061C4588>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204430>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204030>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:28,776 [Thread-5:15212] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x064788A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x061C4588>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204430>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204030>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:28,779 [Thread-5:15212] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 87
+2018-06-02 09:52:30,639 [Thread-6:7404] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06478858>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06478978>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204710>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204250>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:30,644 [Thread-6:7404] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06478858>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06478978>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204710>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204250>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:30,647 [Thread-6:7404] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 87
+2018-06-02 09:52:33,369 [Thread-7:18508] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06478858>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x061C4588>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204A10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204650>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:33,371 [Thread-7:18508] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06478858>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x061C4588>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06204A10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06204650>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:52:33,378 [Thread-7:18508] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 87
+2018-06-02 09:54:20,499 [Thread-9:2976] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x064789C0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06478930>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06448F50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x062047B0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:54:20,505 [Thread-9:2976] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x064789C0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06478930>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06448F50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x062047B0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:54:20,514 [Thread-9:2976] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 109
+2018-06-02 09:54:58,916 [Dummy-1:11208] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 09:55:18,350 [Dummy-1:15048] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 09:56:40,285 [Thread-2:9968] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x069BD2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x069BD030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x069CAF50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069B3530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:56:40,288 [Thread-2:9968] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x069BD2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x069BD030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x069CAF50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069B3530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:56:40,291 [Thread-2:9968] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 09:58:03,111 [Thread-4:11820] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x069BD2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C04300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D5D0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069CA890>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,116 [Thread-4:11820] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x069BD2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C04300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D5D0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069CA890>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,125 [Thread-4:11820] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 09:58:03,621 [Thread-5:17336] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C238A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x069BD2B8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D890>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06C0D530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,625 [Thread-5:17336] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C238A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x069BD2B8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D890>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06C0D530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,628 [Thread-5:17336] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 09:58:03,818 [Thread-6:13644] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C238A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C04300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D870>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069CA810>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,824 [Thread-6:13644] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C238A0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C04300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0D870>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x069CA810>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:03,826 [Thread-6:13644] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 09:58:04,007 [Thread-7:9824] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C239C0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C23930>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0DB30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06C0D710>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:04,011 [Thread-7:9824] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06C239C0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06C23930>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06C0DB30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06C0D710>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 09:58:04,015 [Thread-7:9824] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 10:02:38,909 [Dummy-1:10756] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 10:02:38,994 [Thread-2:7104] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06A8F2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06A8F030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06F04B90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06A85FF0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': 'aaaaa', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:02:38,997 [Thread-2:7104] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06A8F2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06A8F030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06F04B90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06A85FF0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': 'aaaaa', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:02:38,999 [Thread-2:7104] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 10:02:42,623 [Thread-3:16648] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06A8F2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06F09300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06A85590>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06A851F0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': 'aaaaa', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:02:42,627 [Thread-3:16648] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x06A8F2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x06F09300>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x06A85590>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x06A851F0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': 'aaaaa', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:02:42,632 [Thread-3:16648] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 10:06:21,242 [Dummy-1:14000] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 10:06:32,993 [Dummy-1:7348] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 10:06:40,122 [Thread-2:17608] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x05E7C2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x05E7C030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x05E8AF30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x05E72530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:06:40,127 [Thread-2:17608] [django.template:878] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'SITE_NAME' in template 'index.html'.
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'SITE_NAME'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [SITE_NAME] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x05E7C2B8>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x05E7C030>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x05E8AF30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x05E72530>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'SITE_NAME ': '鸟嘌呤的个人博客', 'SITE_DESC': '专注Python开发，欢迎和大家交流'}, {}, {'request': <WSGIRequest: GET '/'>}]
+2018-06-02 10:06:40,132 [Thread-2:17608] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 118
+2018-06-02 10:07:49,488 [Dummy-1:17588] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 10:10:45,388 [Dummy-1:7512] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-06-02 10:10:46,654 [Thread-2:18988] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 166
