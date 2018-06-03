@@ -9,9 +9,9 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
     fieldsets = (
-        ('基本信息',{'fields':('title','desc','content')}),
+        ('基本信息',{'fields':('title','desc','content','user')}),
         ('高级设置',{'classes':('collapse',),
-                    'fields':('click_count','is_recommend'),
+                    'fields':('click_count','is_recommend','tag'),
                     }),
     )
 

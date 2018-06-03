@@ -155,7 +155,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
     )
-
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
 
 # 自定义用户model
 AUTH_USER_MODEL = 'blog.User'
