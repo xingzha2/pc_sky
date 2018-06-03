@@ -284,3 +284,283 @@ Traceback (most recent call last):
     updates.update(processor(self.request))
 TypeError: global_setting() takes 0 positional arguments but 1 was given
 2018-06-03 09:41:10,437 [Thread-8:10332] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-03 11:31:18,137 [Thread-2:3808] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 194, in render
+    return template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 999, in render
+    return render_value_in_context(output, context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 978, in render_value_in_context
+    value = str(value)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\html.py", line 380, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "F:\env\env_mysite\lib\site-packages\django\forms\boundfield.py", line 36, in __str__
+    return self.as_widget()
+  File "F:\env\env_mysite\lib\site-packages\django\forms\boundfield.py", line 118, in as_widget
+    **kwargs
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\widgets.py", line 127, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+2018-06-03 11:39:41,646 [Thread-2:6580] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1553, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1450, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1479, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 668, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 549, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 256, in __new__
+    apply_limit_choices_to=False,
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 176, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 180, in formfield_for_dbfield
+    return db_field.formfield(**kwargs)
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\fields.py", line 25, in formfield
+    return super(RichTextField, self).formfield(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\db\models\fields\__init__.py", line 2127, in formfield
+    return super().formfield(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\db\models\fields\__init__.py", line 874, in formfield
+    return form_class(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\fields.py", line 36, in __init__
+    external_plugin_resources=external_plugin_resources)})
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\widgets.py", line 102, in __init__
+    config_name)
+django.core.exceptions.ImproperlyConfigured: No configuration named 'default'                             found in your CKEDITOR_CONFIGS setting.
+2018-06-03 11:39:54,173 [Thread-3:19116] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\utils\module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 246, in bind_template
+    processors = (template.engine.template_context_processors +
+  File "F:\env\env_mysite\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError: ckeditor doesn't look like a module path
+2018-06-03 11:40:19,444 [Thread-2:6240] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\utils\module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\env\env_mysite\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 246, in bind_template
+    processors = (template.engine.template_context_processors +
+  File "F:\env\env_mysite\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError: ckeditor doesn't look like a module path
+2018-06-03 11:42:35,929 [Thread-2:18928] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1553, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1450, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 1479, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 668, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 549, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 256, in __new__
+    apply_limit_choices_to=False,
+  File "F:\env\env_mysite\lib\site-packages\django\forms\models.py", line 176, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "F:\env\env_mysite\lib\site-packages\django\contrib\admin\options.py", line 180, in formfield_for_dbfield
+    return db_field.formfield(**kwargs)
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\fields.py", line 25, in formfield
+    return super(RichTextField, self).formfield(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\db\models\fields\__init__.py", line 2127, in formfield
+    return super().formfield(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\django\db\models\fields\__init__.py", line 874, in formfield
+    return form_class(**defaults)
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\fields.py", line 36, in __init__
+    external_plugin_resources=external_plugin_resources)})
+  File "F:\env\env_mysite\lib\site-packages\ckeditor\widgets.py", line 102, in __init__
+    config_name)
+django.core.exceptions.ImproperlyConfigured: No configuration named 'default'                             found in your CKEDITOR_CONFIGS setting.
