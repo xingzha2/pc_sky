@@ -283,3 +283,4 @@ Traceback (most recent call last):
   File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
     updates.update(processor(self.request))
 TypeError: global_setting() takes 0 positional arguments but 1 was given
+2018-06-03 09:41:10,437 [Thread-8:10332] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
