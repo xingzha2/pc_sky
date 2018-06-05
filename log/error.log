@@ -1,0 +1,35 @@
+2018-06-04 10:57:49,043 [Thread-2:19192] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:01:11,325 [Thread-34:5856] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:01:25,737 [Thread-40:8520] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:01:49,727 [Thread-46:14556] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:13:07,144 [Thread-52:1872] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:13:09,373 [Thread-53:13504] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:13:10,370 [Thread-54:11976] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:13:10,578 [Thread-55:16120] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:13:10,785 [Thread-56:1240] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:17:12,634 [Thread-57:16332] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:17:55,022 [Thread-58:15820] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:17:56,618 [Thread-59:1336] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:17:58,302 [Thread-60:11684] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:21:33,103 [Thread-61:10868] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:21:36,022 [Thread-62:11500] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-04 11:21:37,372 [Thread-63:18448] [blog.views:31] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-05 11:31:16,424 [Thread-2:18128] [blog.views:33] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-05 14:57:25,177 [Thread-31:19132] [blog.views:33] [views:index] [ERROR]- name 'Paginator' is not defined
+2018-06-05 15:24:40,807 [Thread-11:10856] [blog.views:120] [views:article] [ERROR]- 'bool' object is not callable
+2018-06-05 15:26:54,994 [Thread-5:8888] [blog.views:120] [views:article] [ERROR]- 'bool' object is not callable
+2018-06-05 15:28:02,448 [Thread-2:16144] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:29:33,492 [Thread-6:14988] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:29:35,838 [Thread-7:1756] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:29:49,633 [Thread-10:11012] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:31:21,144 [Thread-11:9568] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:38:28,616 [Thread-12:7888] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:41:04,276 [Thread-2:11968] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:41:34,245 [Thread-10:18488] [blog.views:197] [views:do_login] [ERROR]- 'WSGIRequest' object has no attribute 'session'
+2018-06-05 15:41:37,383 [Thread-11:15096] [blog.views:197] [views:do_login] [ERROR]- 'WSGIRequest' object has no attribute 'session'
+2018-06-05 15:41:45,533 [Thread-12:7816] [blog.views:197] [views:do_login] [ERROR]- 'WSGIRequest' object has no attribute 'session'
+2018-06-05 15:41:48,120 [Thread-13:18476] [blog.views:197] [views:do_login] [ERROR]- 'WSGIRequest' object has no attribute 'session'
+2018-06-05 15:41:52,900 [Thread-14:7080] [blog.views:197] [views:do_login] [ERROR]- 'WSGIRequest' object has no attribute 'session'
+2018-06-05 15:42:00,083 [Thread-16:4404] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:42:37,097 [Thread-20:14556] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'
+2018-06-05 15:42:39,571 [Thread-21:6316] [blog.views:120] [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'user'

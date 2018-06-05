@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from ckeditor.fields import RichTextField
+import datetime
 # Create your models here.
+
 # 用户模型.
 # 第一种：采用的继承方式扩展用户信息（本系统采用）
 # 扩展：关联的方式去扩展用户信息
@@ -19,48 +21,48 @@ class User(AbstractUser):
     def __unicode__(self):
         return self.username
 
-
-#tag
+# tag（标签）
 class Tag(models.Model):
-	name = models.CharField(max_length=30,verbose_name='标签名字')
+    name = models.CharField(max_length=30, verbose_name='标签名称')
 
-	class Meta:
-		verbose_name='标签'
-		verbose_name_plural = verbose_name
+    class Meta:
+        verbose_name = '标签'
+        verbose_name_plural = verbose_name
 
-	def __unicode__(self):
-		return str(self.name)
+    def __unicode__(self):
+        return self.name
 
+# 分类
 class Category(models.Model):
-	name = models.CharField(max_length=30,verbose_name='分类名称')
-	index = models.IntegerField(default=999,verbose_name='分类的排序')
+    name = models.CharField(max_length=30, verbose_name='分类名称')
+    index = models.IntegerField(default=999,verbose_name='分类的排序')
 
-	class Meta:
-		verbose_name='分类'
-		verbose_name_plural = verbose_name
-	def __unicode__(self):
-		return self.name
+    class Meta:
+        verbose_name = '分类'
+        verbose_name_plural = verbose_name
+        ordering = ['index', 'id']
 
+    def __unicode__(self):
+        return self.name
 
 # 自定义一个文章Model的管理器
 # 1、新加一个数据处理的方法
 # 2、改变原有的queryset
-'''class ArticleManager(models.Manager):
+class ArticleManager(models.Manager):
     def distinct_date(self):
         distinct_date_list = []
         date_list = self.values('date_publish')
         for date in date_list:
-            date = date['date_publish'].strftime('%Y/%m文章存档')
+            date = date['date_publish'].strftime('%Y/%m')+'文章存档'
             if date not in distinct_date_list:
                 distinct_date_list.append(date)
-        return distinct_date_list'''
+        return distinct_date_list
 
 # 文章模型
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
     desc = models.CharField(max_length=50, verbose_name='文章描述')
     content = models.TextField(verbose_name='文章内容')
-    #content = RichTextField(verbose_name='文章内容')
     click_count = models.IntegerField(default=0, verbose_name='点击次数')
     is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
@@ -68,7 +70,7 @@ class Article(models.Model):
     category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类',on_delete=models.CASCADE)
     tag = models.ManyToManyField(Tag, verbose_name='标签')
 
-    #objects = ArticleManager()
+    objects = ArticleManager()
 
     class Meta:
         verbose_name = '文章'

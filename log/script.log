@@ -764,3 +764,906 @@ Traceback (most recent call last):
   File "F:\env\env_mysite\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.IntegrityError: (1048, "Column 'user_id' cannot be null")
+2018-06-04 09:50:01,599 [Thread-2:5760] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ad.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 14, in index
+    return render(request,'index.html',locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ad.html
+2018-06-04 09:50:02,231 [Thread-3:14228] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-04 10:57:49,091 [Thread-2:19192] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 32, in index
+    return render(request,'index.html',locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2018-06-05 11:31:16,488 [Thread-2:18128] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 34, in index
+    return render(request,'index.html',locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2018-06-05 11:31:17,088 [Thread-3:13524] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-05 14:57:15,213 [Thread-16:16404] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-06-05 14:57:25,196 [Thread-31:19132] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 34, in index
+    return render(request,'index.html',locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2018-06-05 15:09:41,840 [Thread-2:3360] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%mÎÄÕÂ´æµµ')
+UnicodeEncodeError: 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-06-05 15:09:56,819 [Thread-8:5344] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%mÎÄÕÂ´æµµ')
+UnicodeEncodeError: 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-06-05 15:12:50,327 [Thread-2:4704] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%mÎÄÕÂ´æµµ')
+UnicodeEncodeError: 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-06-05 15:14:08,423 [Thread-2:12800] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\env\env_mysite\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\env\env_mysite\lib\site-packages\django\urls\resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2018-06-05 15:14:58,569 [Thread-2:14284] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%mÎÄÕÂ´æµµ')
+UnicodeEncodeError: 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-06-05 15:23:03,803 [Thread-2:6364] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%mÎÄÕÂ´æµµ')
+UnicodeEncodeError: 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-06-05 15:24:40,808 [Thread-11:10856] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:25:59,304 [Thread-2:14072] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 58, in index
+    return render(request, 'index.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "e:\python3.6\Lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\env\env_mysite\lib\site-packages\django\template\context.py", line 250, in bind_template
+    updates.update(processor(self.request))
+  File "F:\django\blog_project\blog\views.py", line 26, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "F:\django\blog_project\blog\models.py", line 56, in distinct_date
+    date = date['date_publish'].strftime('%Y/%m','ÎÄÕÂ´æµµ')
+TypeError: strftime() takes at most 1 argument (2 given)
+2018-06-05 15:26:54,995 [Thread-5:8888] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:28:02,455 [Thread-2:16144] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:29:33,493 [Thread-6:14988] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:29:35,840 [Thread-7:1756] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:29:49,636 [Thread-10:11012] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:31:21,147 [Thread-11:9568] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'blog.templatetags.myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'blog.templatetags.myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
+2018-06-05 15:38:28,618 [Thread-12:7888] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1025, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\env\env_mysite\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django\blog_project\blog\views.py", line 121, in article
+    return render(request, 'article.html', locals())
+  File "F:\env\env_mysite\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\loader_tags.py", line 290, in do_extends
+    nodelist = parser.parse()
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "F:\env\env_mysite\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1082, in load
+    lib = find_library(parser, name)
+  File "F:\env\env_mysite\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+static
+staticfiles
+tz
